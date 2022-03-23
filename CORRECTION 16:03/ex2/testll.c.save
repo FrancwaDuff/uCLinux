@@ -41,7 +41,7 @@ int main(int N, char *P[])
 
 	int n;
 	signal(SIGINT, interrupt);
-	while (RUN){
+	while (read(STDIN_FILENO, &buf, 1) == RUN && &'){
 		printf("Taper un texte ou FIN pour stopper le programme :\n");
 		if ((n = lireligne(0, (void *)buf, LBUF, '\n')) < 0)
 			printf("Erreur dans la saisie de la ligne!");
