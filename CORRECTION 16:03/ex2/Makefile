@@ -1,6 +1,6 @@
 # Makefile pour les exemples
 
-default : ex1 ex1s ex2
+default : ex1 ex1s ex2 testll
 
 ex1 : ex1.c
 	cc -o ex1 ex1.c
@@ -16,6 +16,15 @@ ex2.o : ex2.c malib.h
 
 malib.o : malib.c malib.h
 	cc -c malib.c
+
+testll : testll.o es.o
+	cc -o testll testll.o es.o
+
+testll.o : testll.c es.h
+	cc -c testll.c
+
+es.o : es.c es.h
+	cc -c es.c
 
 clean :
 	rm -f ex1 ex1s ex2 *.o
