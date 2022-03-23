@@ -21,7 +21,7 @@ void interrupt(int S)
 	}
 
 }
-
+/* Trouver comment mettre le terminal en mode RAW */
 
 int main(int N, char *P[])
 {
