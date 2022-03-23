@@ -27,5 +27,5 @@ es.o : es.c es.h
 	cc -c es.c
 
 clean :
-	rm -f ex1 ex1s ex2 *.o
+	rm -f ex1 ex1s ex2 testll *.o
 
