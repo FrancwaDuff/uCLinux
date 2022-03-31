@@ -1,12 +1,12 @@
 # Makefile pour les exemples
 
-default : ex1 ex1s ex2 testll testll2
+default : ex1 ex2 testll testll2
 
 ex1 : ex1.c
 	cc -o ex1 ex1.c
 
-ex1s : ex1.c
-	cc -o ex1s -static ex1.c
+#ex1s : ex1.c
+#	cc -o ex1s -static ex1.c
 
 ex2 : ex2.o malib.o
 	cc -o ex2 ex2.o malib.o
@@ -31,8 +31,6 @@ es.o : es.c es.h
 
 libtot.a : malib.o es.o
 	ar crv libtot.a malib.o es.o
-
-
 clean :
-	rm -f ex1 ex1s ex2 testll testll2 libtot.a *.o
+	rm -f ex1 ex1s ex2 testll testll2 libtot.a *.o 
 
