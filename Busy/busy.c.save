@@ -1,0 +1,9 @@
+/* exemple simple pour illustrer le principe de la busybox */
+
+#include <stdio.h>
+
+int main(int N, char *P[]) /* *P[] tableau d'adresse de chaine de caractèrs */
+{
+	
+}
+git config pull.rebase true
